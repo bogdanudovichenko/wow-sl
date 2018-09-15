@@ -146,7 +146,7 @@
                     logicalName: 'realmName'
                 },
                 {
-                    displayName: 'Rating',
+                    displayName: 'Rate',
                     logicalName: 'rating'
                 }
             ]
