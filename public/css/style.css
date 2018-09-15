@@ -2,6 +2,10 @@
     background-image: url("../img/bg.jpg");
 }
 
+#content-ladder-wrapper {
+    overflow-x: hidden;
+}
+
 /*start tab control styles*/
 .tabs-control-wrapper {
     background: #322500;
