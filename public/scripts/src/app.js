@@ -23,8 +23,14 @@
 
     renderLadder(store);
 
+    var tabsFromState = store.getState('tabs');
+
+    tabsFromState[0].displayValue = '2v2';
+    tabsFromState[1].displayValue = '3v3';
+    tabsFromState[2].displayValue = 'RBG';
+
     var bracketTabsControl = new TabsControl('#bracket-wrapper', {
-        tabs: store.getState('tabs'),
+        tabs: tabsFromState,
         selectedValue: store.getState('currentWowPvpBracket'),
         onclick: function (ev) {
             store.setState('currentWowPvpBracket', ev.value);
