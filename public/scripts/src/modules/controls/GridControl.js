@@ -178,6 +178,7 @@
 
         var td = document.createElement('td');
         td.classList.add('grid-body-td');
+        td.classList.add(key + '-td')
         td.appendChild(displaySpan);
         td.appendChild(keySpan);        
 
@@ -214,6 +215,7 @@
         }
 
         var th = document.createElement('th');
+        th.classList.add(header.logicalName + '-th');
 
         //start display span creation
         var displaySpan = document.createElement('span');

@@ -41,6 +41,9 @@
 .filter-wrapper-item {
     display: inline-block;
 }
+
+
+
 /*start grid control styles*/
 .grid-control-table {
     border-collapse: collapse;
@@ -83,6 +86,32 @@
 .dropdown {
     position: relative;
     display: inline-block;
+}
+
+@media screen and (max-width: 870px) {
+    #wrapper {
+        margin: 0 !important;
+    }
+
+    .filter-wrapper-item, .dropdown {
+        display: block !important;
+    }
+
+    .tabs-control-wrapper {
+        height: 50px !important;
+        overflow: hidden;
+    }
+
+    .tab-contol-wrapper {
+        width: 33% !important;
+        float: left !important;
+        font-size: 18px !important;
+        padding-top: 15px !important; 
+    }
+
+    .ranking-th, .ranking-td, .realmName-th, .realmName-td {
+        display: none;
+    }
 }
 
 /* Dropdown Content (Hidden by Default) */
