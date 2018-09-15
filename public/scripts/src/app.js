@@ -1,15 +1,15 @@
 ﻿document.addEventListener('DOMContentLoaded', function () {
     var tabs = [
         {
-            displayValue: '2v2 Arena',
+            displayValue: '2v2',
             value: '2v2'
         },
         {
-            displayValue: '3v3 Arena',
+            displayValue: '3v3',
             value: '3v3'
         },
         {
-            displayValue: 'Battlegrounds',
+            displayValue: 'RBG',
             value: 'rbg'
         }
     ];
@@ -52,8 +52,8 @@
         var selectedWowClass = store.getState('selectedWowClass');
 
         if (selectedWowClass && selectedWowClass !== 'all') {
-            document.getElementById('wow-specs-drop-down-wrapper').style.display = '';
-;
+            document.getElementById('wow-specs-drop-down-wrapper').classList.remove('hidden');
+            
             var wowSpecsList = _.filter(wowClassesList, function (wc) { return wc.value === selectedWowClass })[0].specs;
             var selectedWowSpec = store.getState('selectedWowSpec');
 
@@ -65,7 +65,7 @@
                 }
             });
         } else {
-            document.getElementById('wow-specs-drop-down-wrapper').style.display = 'none';
+            document.getElementById('wow-specs-drop-down-wrapper').classList.add('hidden');
         }
     }
 

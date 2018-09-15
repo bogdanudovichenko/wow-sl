@@ -93,6 +93,10 @@
         margin: 0 !important;
     }
 
+    .hidden {
+        display: none !important;
+    }
+
     .filter-wrapper-item, .dropdown {
         display: block !important;
     }
@@ -112,6 +116,18 @@
     .ranking-th, .ranking-td, .realmName-th, .realmName-td {
         display: none;
     }
+
+    .specId-td .grid-td-display-span {
+        display: none;
+    }
+
+    .specId-td img {
+        display: inline !important;
+    }
+}
+
+.specId-td .grid-td-display-span {
+    display: none;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -191,4 +207,8 @@ a.wow-class-name-link {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.hidden {
+    display: none !important;
 }

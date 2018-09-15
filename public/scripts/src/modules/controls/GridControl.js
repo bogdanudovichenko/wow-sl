@@ -176,9 +176,19 @@
         displaySpan.classList.add('grid-td-display-span');
         displaySpan.innerHTML = template && typeof(template) === 'function' ? template(value, item) : value;
 
+        var icon = document.createElement('img');
+        icon.src = '/img/icons/' + (value || 'unknow') + '.png';
+        icon.width = 50;
+
         var td = document.createElement('td');
         td.classList.add('grid-body-td');
-        td.classList.add(key + '-td')
+        td.classList.add(key + '-td');
+        
+        
+        if(key === 'specId') {
+            td.appendChild(icon);
+        }
+
         td.appendChild(displaySpan);
         td.appendChild(keySpan);        
 
