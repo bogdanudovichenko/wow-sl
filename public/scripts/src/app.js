@@ -108,7 +108,7 @@
                     displayName: 'Name',
                     logicalName: 'name',
                     template: function (val, item) {
-                        var url = 'https://worldofwarcraft.com/en-gb/character/' + item.realmName.replace(' ', '-') + '/' + val;
+                        var url = 'https://worldofwarcraft.com/en-gb/character/' + item.realmName.replace(' ', '-').replace('\'', '') + '/' + val;
                         url = decodeURIComponent(url);
 
                         var link = document.createElement('a');
