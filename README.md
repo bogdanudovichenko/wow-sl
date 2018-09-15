@@ -1,1 +1,1 @@
-# wow-sl
+https://wow-sl.net
