@@ -1,1 +1,1 @@
-https://www.wow-sl.net
+http://www.wow-sl.net
